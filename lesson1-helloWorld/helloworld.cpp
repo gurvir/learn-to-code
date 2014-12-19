@@ -13,4 +13,5 @@ int main()
 	// We use cout to "OUTPUT" to the screen
 	// in later lessons we will use cin to get "INPUT" from the users
 	cout << "Hello World - Gurvir has arrived"<<endl;
+	cout << "Gurvir is all set to become a legendary programmer"<<endl;
 }
