@@ -7,10 +7,13 @@ int main()
 {
 	int theRandomNumber;
 	bool isGameOver=false;
+	const int MAX_VALUE = 1000;
+	const int MIN_VALUE = 1;
+
 
 	//The computer will generate a random number for the player to guess
 	srand(time(NULL));
-	theRandomNumber = rand()%1000+1;
+	theRandomNumber = rand()%MAX_VALUE+MIN_VALUE;
 
 	while ( isGameOver==false)
 	{
@@ -18,7 +21,13 @@ int main()
 		cout<< "Guess the number, if you can man"<<endl;
 		cin>> theGuess;
 
-		if(theGuess==theRandomNumber)
+		if (theGuess==0)
+		{
+			cout<< "The guess should be between "<<
+					MIN_VALUE<<" and " << MAX_VALUE<<endl;
+
+		}
+		else if(theGuess==theRandomNumber)
 		{
 			cout<< "well done you have guessed the number"<< endl;
 			isGameOver=true;
