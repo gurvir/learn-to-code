@@ -21,10 +21,12 @@ int main()
 		cout<< "Guess the number, if you can man"<<endl;
 		cin>> theGuess;
 
-		if (theGuess==0)
+		if (cin.fail())
 		{
 			cout<< "The guess should be between "<<
 					MIN_VALUE<<" and " << MAX_VALUE<<endl;
+			cin.clear();
+			cin.ignore(10000, '\n');
 
 		}
 		else if(theGuess==theRandomNumber)
