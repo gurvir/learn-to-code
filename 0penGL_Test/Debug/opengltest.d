@@ -1,0 +1,1 @@
+opengltest.d: ../opengltest.cpp
