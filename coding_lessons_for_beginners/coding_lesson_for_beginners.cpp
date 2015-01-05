@@ -6,18 +6,19 @@
 // cin and cout.
 using namespace std;
 
-// This is a function prototype it tells the main function that this function exists
+// Function prototypes tell the main function that the function exists
 // but is declared later.
 
 void lesson1_helloWorld();
 void lesson2_isTheNumberOddOrEven();
+void lesson3_timesTables();
 
 // All c++ programs begin at the main function
 int main()
 {
 	 lesson1_helloWorld();
 	 lesson2_isTheNumberOddOrEven();
-
+	 lesson3_timesTables();
 	 return(0);
 }
 
@@ -47,5 +48,37 @@ void lesson2_isTheNumberOddOrEven()
 	{
 		cout << "your number is odd\n";
 
+	}
+}
+
+void lesson3_timesTables()
+{
+	int multiplier;
+	bool stop = false;
+
+	// Ask the user which times tables he wants to do
+	cout << "Enter a number to indicate which times table you want to do\n";
+	cin >> multiplier;
+
+	while (stop == false)
+	{
+		if (cin.fail())
+		{
+
+			cin.clear();
+			cin.ignore(10000, '\n');
+			cout << "You were supposed to enter an integer number\n";
+		}
+		else
+		{
+			for (int i = 1;i <= 12;i++)
+			{
+
+				cout<< i << " X "<< multiplier<< " = "<< i * multiplier<<endl;
+
+			}
+			cout<< "Do you want to do another times table. Enter y for yes or n for no \n";
+			stop = true;
+		}
 	}
 }
