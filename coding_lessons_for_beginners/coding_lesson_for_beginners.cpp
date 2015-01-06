@@ -1,6 +1,6 @@
 // We include iostream so that we can read and write to and from the screen.
 #include <iostream>
-
+#include <string>
 // This next line means we do not have to keep writing std::cin when reading from
 // the screen and std::cout when writing to the screen. Instead we can just write
 // cin and cout.
@@ -56,12 +56,14 @@ void lesson3_timesTables()
 	int multiplier;
 	bool stop = false;
 
-	// Ask the user which times tables he wants to do
-	cout << "Enter a number to indicate which times table you want to do\n";
-	cin >> multiplier;
+
 
 	while (stop == false)
 	{
+		// Ask the user which times tables he wants to do
+		cout << "Enter a number to indicate which times table you want to do\n";
+		cin >> multiplier;
+
 		if (cin.fail())
 		{
 
@@ -78,7 +80,23 @@ void lesson3_timesTables()
 
 			}
 			cout<< "Do you want to do another times table. Enter y for yes or n for no \n";
-			stop = true;
+
+			cin.clear();
+			cin.ignore(10000, '\n');
+			string answer;
+			cin >> answer;
+
+			if (answer == "y" || answer == "Y")
+			{
+				cin.clear();
+				cin.ignore(10000, '\n');
+
+			}
+			else
+			{
+				stop = true;
+
+			}
 		}
 	}
 }
