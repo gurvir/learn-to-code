@@ -1,0 +1,32 @@
+﻿Gurvir Programming Lessons
+
+The whole course will be a single project called “Coding_Lessons_For_Beginners”.  Each lesson will be a function invoked from main.  Extensive use of comments will be made to explain what is happening in the program.
+
+Programming Topics
+1. Input and Output
+2. Functions
+3. Variables (Integer, Float, Strings)
+4. The assignment operator “=”
+5. The mathematical operator “+”, “-”,”*”,”/”
+6. The IF Statement and comparison operators “==”,”<”,”>”,”<=”,”>=”
+7. The logical operators AND (&&), OR (||), NOT (!)
+8. The Case Statement
+9. Loops (For, While, Do While)
+10. Arrays
+
+Maths Topics 
+1. Counting in multiples
+2. Odd and Even
+
+Example Programs
+
+lesson1_helloWorldx
+lesson2_countingProgram
+lesson3_TimesTables
+lesson4_twoNumberMathsGame
+lesson5_putNumbersInOrder
+lesson5_theSizeOfDifferentVariableTypes
+lesson6_theGuessMyNumberGamex
+lesson7_shootinng game
+
+
